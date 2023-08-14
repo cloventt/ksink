@@ -1,0 +1,18 @@
+{"namespace": "example.avro",
+ "type": "record",
+ "name": "Test",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "favorite_number",  "type": ["int", "null"]},
+     {"name": "favorite_color", "type": ["string", "null"]},
+     {"name": "is_new", "type": ["boolean", "null"]},
+     {"name": "user_rating", "type": ["double", "null"]},
+     {"name": "class", "type": [{
+        "type": "enum",
+        "name": "Class",
+        "symbols": ["HUMAN", "ALIEN", "ANIMAL"]
+     }, "null"]},
+     {"name": "inventory", "type": [{"type": "array","items":"string","default":[]}, "null"]},
+     {"name": "quests", "type": {"type": "map", "values":"string", "default":{}}}
+ ]
+}

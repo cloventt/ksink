@@ -1,0 +1,25 @@
+# KSink Application Conf
+
+[app]
+instance_id = "ksink-01"
+
+[kafka.consumer]
+# Anything set here will be passed to the KafkaConsumer
+# Refer to: https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html
+bootstrap_servers = "localhost:9092"
+client_id = "ksink-01"
+group_id = "ksink"
+
+[source]
+topic = "please_override"
+
+[batch]
+size_bytes = 1048576  # 1MiB
+max_age_seconds = 10
+
+[destination.s3]
+emabled = false
+
+[destination.file]
+enabled = false
+path = "/tmp/ksink/"

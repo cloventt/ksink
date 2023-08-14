@@ -1,0 +1,12 @@
+{
+  "name": "CaptainBJ",
+  "favorite_number": 7,
+  "favorite_color": null,
+  "is_new": true,
+  "user_rating": 5.35,
+  "class": "HUMAN",
+  "inventory": ["gun"],
+  "quests": {
+    "quest1": "stage1"
+  }
+}

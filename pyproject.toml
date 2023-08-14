@@ -1,12 +1,19 @@
 [tool.poetry]
 name = "ksink"
 version = "0.1.0"
-description = ""
-authors = ["David Palmer <david.palmer@adscale.co.nz>"]
+description = "A utility application for sinking data from Apache Kafka to at-rest storage."
+authors = ["David Palmer <dave@cloventt.net>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
+ecs-logging = "^2.0.2"
+dynaconf = "^3.2.0"
+kafka-python = "^2.0.2"
+python-schema-registry-client = "^2.5.0"
+zstandard = "^0.21.0"
+wheel = "^0.41.1"
+python-snappy = "^0.6.1"
 
 
 [build-system]
